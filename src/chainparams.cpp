@@ -51,7 +51,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "CNN 19/Mar/2021 Iceland reports a volcanic eruption near the capital of Reykjavik";
+    const char* pszTimestamp = "BBC 30/Mar/2021 Suez Canal reopens after giant stranded ship is freed";
     const CScript genesisOutputScript = CScript() << ParseHex("040184710fa689dd5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -117,7 +117,7 @@ consensus.defaultAssumeValid = uint256S("0x27bbd1f99fc7a905b25019cf1d9b22dd05736
 
         //genesis = CreateGenesisBlock(1317972665, 2084524493, 0x1e0ffff0, 1, 50 * COIN);
 
-	genesis = CreateGenesisBlock(1616210659, 2087685972, 0x1e0ffff0, 1, 50 * COIN); 
+	genesis = CreateGenesisBlock(1617106242, 2084830144, 0x1e0ffff0, 1, 15000000 * COIN); 
 	/*  updated to use Rave time, nonce, and bits respectively for the 
 	first three parameters. Also changed Rave's  block reward 
 	amount in this area. */
@@ -126,8 +126,8 @@ consensus.defaultAssumeValid = uint256S("0x27bbd1f99fc7a905b25019cf1d9b22dd05736
 
 
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x27bbd1f99fc7a905b25019cf1d9b22dd0573650f28ea931e8492ff710d3a9d9d"));
-        assert(genesis.hashMerkleRoot == uint256S("0xa7c76c422194d1e769b2f8a69fb58822339b6aca6764526787adceef7f9f6315"));
+        assert(consensus.hashGenesisBlock == uint256S("0x47859757cde444a80a1dac9c3761f4c16350aa6b9c478690605ebf40e70834dd"));
+        assert(genesis.hashMerkleRoot == uint256S("0x766b1a43a909ae84cf18907fd36c23884028596158e87cf63e8c4afd52787234));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -137,7 +137,7 @@ consensus.defaultAssumeValid = uint256S("0x27bbd1f99fc7a905b25019cf1d9b22dd05736
         //vSeeds.emplace_back("seed-a.ravecoin.loshan.co.uk");
         //vSeeds.emplace_back("dnsseed.thrasher.io");
         //vSeeds.emplace_back("dnsseed.ravecointools.com");
-        vSeeds.emplace_back("dnsseed.ravecoinpool.io");
+        vSeeds.emplace_back("dnsseed.raveco.in");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,82);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -156,7 +156,7 @@ consensus.defaultAssumeValid = uint256S("0x27bbd1f99fc7a905b25019cf1d9b22dd05736
         checkpointData = {
             {
 
-		{ 0, uint256S("0x27bbd1f99fc7a905b25019cf1d9b22dd0573650f28ea931e8492ff710d3a9d9d")},
+		{ 0, uint256S("0x47859757cde444a80a1dac9c3761f4c16350aa6b9c478690605ebf40e70834dd")},
 /*
                 {  4032, uint256S("0x9ce90e427198fc0ef05e5905ce3503725b80e26afd35a987965fd7e3d9cf0846")},
                 {  8064, uint256S("0xeb984353fc5190f210651f150c40b8a4bab9eeeff0b729fcb3987da694430d70")},
@@ -178,7 +178,7 @@ consensus.defaultAssumeValid = uint256S("0x27bbd1f99fc7a905b25019cf1d9b22dd05736
 
         chainTxData = ChainTxData{
             // Data from rpc: getchaintxstats 4096 2cdba8c47858d34cf0e02dfb8733263a3ed8705b1663ec7c158783d77b93e7ee
-            /* nTime    */ 1616210659,
+            /* nTime    */ 1617106242,
             /* nTxCount */ 0,
             /* dTxRate  */ 0.0
         };
