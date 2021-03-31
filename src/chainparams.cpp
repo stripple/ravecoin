@@ -66,7 +66,7 @@ public:
         consensus.nSubsidyHalvingInterval = 440000;
         consensus.BIP16Height = 0; // 87afb798a3ad9378fcd56123c81fb31cfd9a8df4719b9774d71730c16315a092 - October 1, 2012
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("27bbd1f99fc7a905b25019cf1d9b22dd0573650f28ea931e8492ff710d3a9d9d");
+        consensus.BIP34Hash = uint256S("47859757cde444a80a1dac9c3761f4c16350aa6b9c478690605ebf40e70834dd");
         consensus.BIP65Height = 0; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a
         consensus.BIP66Height = 0; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
@@ -97,7 +97,7 @@ public:
 
         // By default assume that the signatures in ancestors of this block are valid.
 
-consensus.defaultAssumeValid = uint256S("0x27bbd1f99fc7a905b25019cf1d9b22dd0573650f28ea931e8492ff710d3a9d9d"); //1683528
+consensus.defaultAssumeValid = uint256S("0x47859757cde444a80a1dac9c3761f4c16350aa6b9c478690605ebf40e70834dd"); //1683528
 
 
 
@@ -127,7 +127,7 @@ consensus.defaultAssumeValid = uint256S("0x27bbd1f99fc7a905b25019cf1d9b22dd05736
 
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x47859757cde444a80a1dac9c3761f4c16350aa6b9c478690605ebf40e70834dd"));
-        assert(genesis.hashMerkleRoot == uint256S("0x766b1a43a909ae84cf18907fd36c23884028596158e87cf63e8c4afd52787234));
+        assert(genesis.hashMerkleRoot == uint256S("0x766b1a43a909ae84cf18907fd36c23884028596158e87cf63e8c4afd52787234"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
