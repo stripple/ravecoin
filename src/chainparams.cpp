@@ -107,9 +107,9 @@ consensus.defaultAssumeValid = uint256S("0x263980b17dd95a10202929e232e02662a9a46
          * a large 32-bit integer with any alignment.
          */
         pchMessageStart[0] = 0x82;
-        pchMessageStart[1] = 0x65;
+        pchMessageStart[1] = 0x95;
         pchMessageStart[2] = 0x86;
-        pchMessageStart[3] = 0x69;
+        pchMessageStart[3] = 0x99;
 	nDefaultPort = 9667;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 22;
@@ -231,9 +231,9 @@ public:
         consensus.defaultAssumeValid = uint256S("0x961ed95965f739d3d133f3e49b77ad8ffe1486b04b97473df35083d8fd5c5f07"); //1174621
 
         pchMessageStart[0] = 0x82;
-        pchMessageStart[1] = 0x65;
-        pchMessageStart[2] = 0x85;
-        pchMessageStart[3] = 0x65;
+        pchMessageStart[1] = 0x85;
+        pchMessageStart[2] = 0x88;
+        pchMessageStart[3] = 0x84;
         nDefaultPort = 19335;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 2;
@@ -322,9 +322,9 @@ public:
         consensus.defaultAssumeValid = uint256S("0x00");
 
         pchMessageStart[0] = 0x83;
-        pchMessageStart[1] = 0x63;
+        pchMessageStart[1] = 0x93;
         pchMessageStart[2] = 0x83;
-        pchMessageStart[3] = 0x63;
+        pchMessageStart[3] = 0x93;
         nDefaultPort = 19444;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 0;
@@ -363,7 +363,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCC};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x93};
 
-        bech32_hrp = "rltc";
+        bech32_hrp = "rtrv";
 
         /* enable fallback fee on regtest */
         m_fallback_fee_enabled = true;
