@@ -138,11 +138,12 @@ consensus.defaultAssumeValid = uint256S("0x263980b17dd95a10202929e232e02662a9a46
         //vSeeds.emplace_back("dnsseed.thrasher.io");
         //vSeeds.emplace_back("dnsseed.ravecointools.com");
         vSeeds.emplace_back("dnsseed.raveco.in");
+	// 48 = L 5 = 3 50 = m  176 = z or a 60 =R 70 = V  122 = r v =132 
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,82);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,50);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,82);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,70);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,122);
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,60);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,132);
         base58Prefixes[EXT_PUBLIC_KEY] = {0xFD, 0x88, 0xBA, 0xCE};
 	base58Prefixes[EXT_SECRET_KEY] = {0xFD, 0x88, 0xA2, 0xE3};
         bech32_hrp = "rve";
