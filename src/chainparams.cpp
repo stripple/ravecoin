@@ -66,7 +66,7 @@ public:
         consensus.nSubsidyHalvingInterval = 821960;
         consensus.BIP16Height = 0; 
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S();
+        consensus.BIP34Hash = uint256S("263980b17dd95a10202929e232e02662a9a465628c56c71375ab5d6e4b9d331c");
         consensus.BIP65Height = 0; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a
         consensus.BIP66Height = 0; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
@@ -185,7 +185,7 @@ public:
         consensus.nSubsidyHalvingInterval = 821960;
         consensus.BIP16Height = 0; // always enforce P2SH BIP16 on testnet
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S();
+        consensus.BIP34Hash = uint256S("961ed95965f739d3d133f3e49b77ad8ffe1486b04b97473df35083d8fd5c5f07");
         consensus.BIP65Height = 0; // 8075c771ed8b495ffd943980a95f702ab34fce3c8c54e379548bda33cc8c0573
         consensus.BIP66Height = 0; // 8075c771ed8b495ffd943980a95f702ab34fce3c8c54e379548bda33cc8c0573
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
@@ -281,7 +281,7 @@ public:
         consensus.nSubsidyHalvingInterval = 150;
         consensus.BIP16Height = 0;
         consensus.BIP34Height = 0; // BIP34 activated on regtest (Used in functional tests)
-        consensus.BIP34Hash = uint256();
+        consensus.BIP34Hash = uint256("44967a16627fb3e34e0aac2e2fb1cdf9fb9fdf5b67a4b92978e3724092a3fc73");
         consensus.BIP65Height = 0; // BIP65 activated on regtest (Used in functional tests)
         consensus.BIP66Height = 0; // BIP66 activated on regtest (Used in functional tests)
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
