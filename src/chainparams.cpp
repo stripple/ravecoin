@@ -159,7 +159,8 @@ consensus.defaultAssumeValid = uint256S("0x263980b17dd95a10202929e232e02662a9a46
         checkpointData = {
             {
 
-		{ 0, uint256S("263980b17dd95a10202929e232e02662a9a465628c56c71375ab5d6e4b9d331c")},
+	{ 0, uint256S("263980b17dd95a10202929e232e02662a9a465628c56c71375ab5d6e4b9d331c")},
+	{ 2480, uint256S("9ea82a0749a5a5f19237c383747a835394fb26de954ea2dd8e10abba9a0c185e")},
          }
         };
 
